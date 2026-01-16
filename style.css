@@ -1,0 +1,118 @@
+:root {
+  --bg: #faf7f8;
+  --card: #ffffff;
+  --ink: #2f2f2f;
+  --soft: #f3d1d8;
+  --muted: #777;
+  --border: #ddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.hero {
+  background: var(--soft);
+  padding: 40px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  justify-content: center;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+nav button {
+  border: none;
+  background: #f9e8ec;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+nav button.active {
+  background: var(--soft);
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.05);
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+small {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+th {
+  background: #f9e8ec;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button.add {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: var(--soft);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
